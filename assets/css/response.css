@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  .column {
+    max-width: 450px; }
+  .navbar-toggler-right {
+    display: inline-block;
+    padding: 0.6rem;
+    outline: none !important; }
+    .navbar-toggler-right i {
+      font-size: 2.4rem;
+      color: #111111; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+    max-width: 100%; } }
+
+@media screen and (max-width: 476px) {
+  .landing .middeleText h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem; }
+  header.fixed-top {
+    opacity: 0.85; }
+    header.fixed-top nav ul li {
+      text-align: right; }
+      header.fixed-top nav ul li a.active {
+        background-color: transparent;
+        color: #24bebd; }
+  .about_bg .container-fluid .row .p-0 {
+    padding: 0 1rem !important;
+    margin-bottom: 1rem; }
+  footer .col-md-12 {
+    text-align: center; }
+    footer .col-md-12 p {
+      display: block;
+      width: 100%; }
+  footer ul {
+    float: none;
+    display: inline-block; }
+  footer .column {
+    max-width: 320px;
+    padding: 1rem; }
+  .middeleText .about_me {
+    padding: 0;
+    margin-bottom: 2rem; } }
