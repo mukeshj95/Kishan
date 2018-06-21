@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-$bgColor: #cbfdfa;
+$bgColor: #8198a0;
 $primaryColor: #24bebd;
 $defaultColor: #383838;
 $link: #1da6a5;
 $white: #ffffff;
 body{font-family: 'Montserrat', sans-serif;}
-section{padding: 6rem 0;position: relative;z-index: 9;}
+section{padding: 2rem 0;}
 ul,li{padding: 0;margin: 0;list-style: none;}
-h1{font-size:3rem;font-weight: 600; color: $defaultColor;}
+h1{font-size:2rem;font-weight: 600;line-height: 2.4rem;margin-bottom: 1.5rem;}
 h2{color: $primaryColor;font-size: 32px;}
+h4{color: #000000;font-size: 1.25rem;line-height:1.6rem;margin-bottom: 1rem;}
+p{font-size: 1rem;line-height: 1.4rem;margin-bottom: 1rem;}
 a{color: $link;text-decoration: none;}
 a:focus{outline: none;}
 .white_bg {background: #ffffff;}
@@ -43,7 +45,8 @@ header {
   -webkit-box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
   -moz-box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
   box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
-  nav {padding: 0;
+  nav.navbar {
+    padding: 0;
     .navbar-brand {
       padding: 0;
       margin: 0;
@@ -51,17 +54,21 @@ header {
       font-weight: 600;
       text-shadow: 2px 5px 10px #AAA;
     }
-    ul {
-      li {
-        padding-right: 1rem;
-        a{
-          font-size: 1rem;
-          font-weight: 500;
-          padding: 0.5rem 1rem;
-          color: #dddddd;
-          &.active{
-            background-color: $primaryColor;
-            color:$white;
+    div {
+
+      ul.navbar-nav {
+        li {
+          padding-right: 1rem;
+          a {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            color: #6e8289;
+            &.active, &:hover {
+              background-color: #1f2a30;
+              color: $white;
+              border-bottom: 2px solid $link;
+            }
           }
         }
       }
@@ -108,5 +115,22 @@ footer{
         }
       }
     }
+  }
+}
+section.bg_gray{
+  background-color: $bgColor;
+}
+div.top_sec{
+  h1{
+    span{
+      background-color: #eeac56;
+      color: #ffffff;
+    }
+  }
+}
+p span.text_paras{width: 50%;float: left;}
+label.text_right{width: 50%;float: right;padding: 2rem;font-size: 1.25rem;line-height: 1.75rem;color: #618480;
+  span{
+    text-align: right;width: 100%;color: #000000;font-size: 1.5rem;display: block;
   }
 }
