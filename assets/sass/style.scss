@@ -37,10 +37,9 @@ a:focus{outline: none;}
 
 /****** header ********/
 header {
-  background-color: $bgColor;
+  background-color: #28373e;
   min-width: 100%;
   min-height: 60px;
-  position: fixed;
   -webkit-box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
   -moz-box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
   box-shadow: 0 8px 6px -6px rgba(205,205,205,0.7);
@@ -48,9 +47,9 @@ header {
     .navbar-brand {
       padding: 0;
       margin: 0;
-      img {
-        max-height: 60px;
-      }
+      color: $link;
+      font-weight: 600;
+      text-shadow: 2px 5px 10px #AAA;
     }
     ul {
       li {
@@ -59,6 +58,7 @@ header {
           font-size: 1rem;
           font-weight: 500;
           padding: 0.5rem 1rem;
+          color: #dddddd;
           &.active{
             background-color: $primaryColor;
             color:$white;
@@ -70,9 +70,8 @@ header {
 }
 /****** footer *****/
 footer{
-  background-size: 100%;
-  padding: 5rem 0 3rem;
-  z-index: 9;
+  padding: 4rem 0;
+  background-color: #28373e;
   .column{
     padding: 30px;
     background: #ffffff;
@@ -84,28 +83,28 @@ footer{
       text-align: center;
     }
   }
-  .col-md-12 {
-    p {
-      float: left;
-      margin-bottom: 0;
-      line-height: 45px;
+  .footer_links {
+    text-align: center;
+    h3 {
       color: #ffffff;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-bottom: 1.25rem;
     }
-  }
-  ul{
-    li {
-      margin-left: 0.5rem;
-      min-width: 30px;
-      text-align: center;
-      a {
-        display: block;
-        padding:0 0.5rem 0;
-        i{
-          font-size: 2rem;
-          color: #ffffff;
-        }
-        &:hover i, &:active i{
-          color: $link;
+    ul {
+      li {
+        margin-left: 0.5rem;
+        min-width: 30px;
+        text-align: center;
+        a {
+          display: block;
+          padding: 0 0.5rem 0;
+          text-decoration: none;
+          color: #647d82;
+          margin-bottom: 0.5rem;
+          &:hover{
+            color: #ffffff;
+          }
         }
       }
     }
